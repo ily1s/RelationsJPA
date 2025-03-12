@@ -11,9 +11,9 @@ public class StudentDao {
 
         em.getTransaction().begin();
 
-        Address address = new Address("New York", "5th Avenue");
+        Address address = new Address("Marrakech", "M2");
 
-        Student student = new Student("John Doe", address);
+        Student student = new Student("Ilyas", address);
 
         em.persist(address);
 
