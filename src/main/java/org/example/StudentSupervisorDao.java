@@ -37,7 +37,7 @@ public class StudentSupervisorDao {
                 System.out.println("- " + Supervisor.getName());
             }
         } catch (Exception e) {
-            sem.getTransaction().rollback();
+            em.getTransaction().rollback();
             e.printStackTrace();
         } finally {
             em.close();
