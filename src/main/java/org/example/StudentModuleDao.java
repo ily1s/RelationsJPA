@@ -9,10 +9,10 @@ public class StudentModuleDao {
 
         em.getTransaction().begin();
         try {
-            Student student = new Student("John Doe");
+            Student student = new Student("Ilyas");
 
-            Module module1 = new Module("Mathematics");
-            Module module2 = new Module("Computer Science");
+            Module module1 = new Module("DL");
+            Module module2 = new Module("JEE");
 
             student.addModule(module1);
             student.addModule(module2);
